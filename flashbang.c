@@ -3,12 +3,11 @@
 #include <string.h>
 #include <gpiod.h>       // libgpiod v2
 #include <MQTTClient.h>
-#include <cjson/cJSON.h> // Fixed cJSON path
+#include <cjson/cJSON.h> 
 
 // --- CONFIGURATION ---
-// Based on PB5 -> Chip 1, Line 5
 #define GPIO_CHIP_PATH   "/dev/gpiochip1" 
-#define GPIO_OFFSET      5                
+#define GPIO_OFFSET      37               
 
 #define BROKER_URI       "tcp://mosquitoserver:1883"
 #define CLIENT_ID        "Cubie_CS2_v2"
