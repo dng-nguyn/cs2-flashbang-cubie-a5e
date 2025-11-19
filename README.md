@@ -14,8 +14,16 @@ data required is ` "player_state"        "1"` and `"provider"            "1" ` f
 
 ### Compiling
 
-gcc flashbang.c -o flashbang -lpaho-mqtt3c -lcjson -lgpiod
+install packages - debian 13 for libgpiod-dev v2
 
+```sh
+sudo apt update
+sudo apt install libpaho-mqtt-dev libcjson-dev libgpiod-dev
+```
+compile
+```sh
+gcc flashbang.c -o flashbang -lpaho-mqtt3c -lcjson -lgpiod
+```
 default pin used is pin 3, which corresponds to index 37 because reasons. refer to [radxa docs](https://docs.radxa.com/en/cubie/a5e/hardware-use/pin-gpio) to find your appropriate pin
 
 <img width="603" height="399" alt="{B21C10E2-E47A-4F49-82F1-9D0464E90014}" src="https://github.com/user-attachments/assets/16671334-a6df-4ac3-8032-441f3dcb5bc7" />
